@@ -35,8 +35,12 @@ function calcularFaturamento(base) {
 const resultado = calcularFaturamento(base);
 
 // Exibir os resultados
-console.log(`Menor valor de faturamento: ${resultado.menorFaturamento}`);
-console.log(`Maior valor de faturamento: ${resultado.maiorFaturamento}`);
+console.log(
+  `Menor valor de faturamento: ${resultado.menorFaturamento.toFixed(2)}`
+);
+console.log(
+  `Maior valor de faturamento: ${resultado.maiorFaturamento.toFixed(2)}`
+);
 console.log(
   `Número de dias com faturamento acima da média: ${resultado.diasAcimaDaMedia}`
 );
